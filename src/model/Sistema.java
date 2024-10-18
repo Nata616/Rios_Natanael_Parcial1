@@ -68,4 +68,11 @@ public class Sistema {
         primerServicio.add(new Hospedaje(codServicio, porcentajeDescuento, enPromocion, hospedaje, precioPorNoche));
         return true;
     }
+    
+    // Metodo imprimir servicios
+    public void imprimirServicios(){
+        for(Servicio s : primerServicio){
+            System.out.println(s);
+        }
+    }
 }
