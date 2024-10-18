@@ -41,7 +41,7 @@ public class Sistema {
         return result;
     }
     
-    // Traer servicios pro promocion y fecha
+    // Traer servicios por promocion y fecha
     public List<Servicio> traerServicio(boolean enPromocion, LocalDate dia){
         List<Servicio> result = new ArrayList<>();
         for (Servicio s : primerServicio){
@@ -65,6 +65,7 @@ public class Sistema {
         if (traerServicio(codServicio) != null){
             throw new IllegalArgumentException("El servicio con el codigo " + codServicio + "ya existe.");
         }
-        primerServicio.add(new Hospedaje(codServicio, porcantajeDescuento)
+        primerServicio.add(new Hospedaje(codServicio, porcentajeDescuento, enPromocion, hospedaje, precioPorNoche));
+        return true;
     }
 }
