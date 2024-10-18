@@ -32,7 +32,7 @@ public class Hospedaje extends Servicio{
 
     @Override
     public String toString() {
-        return "Hospedaje{" + "hospedaje=" + hospedaje + ", precioPorNoche=" + precioPorNoche + '}';
+        return "Hospedaje{codServicio=" + codServicio + "hospedaje=" + hospedaje + ", precioPorNoche=" + precioPorNoche + '}';
     }
     
     

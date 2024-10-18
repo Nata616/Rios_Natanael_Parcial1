@@ -16,7 +16,7 @@ public class Gastronomia extends Servicio{
     private int diaSemDesc; // Dia de la semana en que se aplica el descuento
 
     //  Constructor
-    public Gastronomia(String gastronomia, double precio, int diaSemDesc, String codServicio, double porcentajeDescuento, boolean enPromocion) {
+    public Gastronomia(String codServicio, double porcentajeDescuento, boolean enPromocion, String gastronomia, double precio, int diaSemDesc) {
         super(codServicio, porcentajeDescuento, enPromocion);
         this.gastronomia = gastronomia;
         this.precio = precio;
