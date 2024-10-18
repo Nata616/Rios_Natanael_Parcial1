@@ -4,10 +4,18 @@
  */
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Nata
  */
-public class PersonalException extends Exception{
+public class Sistema {
+    private List<Servicio> primerServicio;
+
+    public Sistema() {
+        this.primerServicio = new ArrayList<>();
+    }
     
 }
