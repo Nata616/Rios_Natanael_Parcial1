@@ -11,6 +11,7 @@ import java.time.LocalDate;
  *
  * @author Nata
  */
+// Clase que representa un servicio de hospedaje
 public class Hospedaje extends Servicio{
     private String hospedaje;
     private double precioPorNoche;
@@ -22,6 +23,7 @@ public class Hospedaje extends Servicio{
         this.precioPorNoche = precioPorNoche;
     }
     
+    // Calcula el precio final del hospedajo considerando las noches y servicios
     @Override
     public double calcularPrecioFinal(LocalDate dia) {
         if(enPromocion && (dia.getDayOfWeek()!= DayOfWeek.SATURDAY && dia.getDayOfWeek() != DayOfWeek.SUNDAY)){

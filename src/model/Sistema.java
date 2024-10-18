@@ -12,6 +12,7 @@ import java.util.List;
  *
  * @author Nata
  */
+// Clase que gestiona los servicios registrados en el sistema
 public class Sistema {
     private List<Servicio> primerServicio;
 

@@ -10,6 +10,7 @@ import java.time.LocalDate;
  *
  * @author Nata
  */
+// Clase abstracta, sirve como base para los servicios hospedaje y gastronomia
 public abstract class Servicio {
     protected String codServicio;
     protected double porcentajeDescuento;
